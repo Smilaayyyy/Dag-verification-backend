@@ -5,12 +5,6 @@ from typing import List
 
 app = FastAPI()
 
-<<<<<<< HEAD
-=======
-# Configure CORS
->>>>>>> 2b34724 (Intial commit)
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
