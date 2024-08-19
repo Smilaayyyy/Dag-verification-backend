@@ -5,15 +5,11 @@ from typing import List
 
 app = FastAPI()
 
-# Configure CORS
-origins = [
-    "http://localhost",  # If you are running frontend on localhost
-    "http://localhost:3001",  # Default port for Create React App
-]
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
